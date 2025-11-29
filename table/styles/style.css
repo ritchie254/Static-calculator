@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0FFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00FFFF;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px 20px;
+    width: 600px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+}
+
+.left > select {
+    width: 50px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+
+.left > p {
+    color: #1B1212;
+}
+
+.right {
+    position: relative;
+    width: 200px;
+}
+
+.right input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #CC7722;
+}
+
+.right i {
+    position: absolute;
+    left: 0;
+    transform: translateY(50%);
+    padding-left: 7px;
+
+}
+
+.data table {
+    display:flex;
+    justify-content: center;
+    border-spacing: 0 5px;
+}
+
+th, td{
+    padding: 8px 15px;
+}
+
+tr:not(:first-child):hover {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: 0.5s ease-out;
+}
+
+
