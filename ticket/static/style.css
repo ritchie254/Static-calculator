@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1434a4;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-right: 3px dotted gray;
+}
+
+.top {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.h {
+    width: 25px;
+    height: 3px;
+    background-color: gray;
+}
+
+.place {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place h2 {
+     color: #7df9ff;
+     font-weight: 600;
+     font-size: 1.7rem;
+ }
+
+ .place p {
+     color: gray;
+     font-size: 16px;
+ }
+
+.card {
+    background-color: #89cff0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 20px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.card > div p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card > div span {
+    color: #0000ff;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.right {
+    padding: 15px;
+    transform: rotate(-90deg) translateY(60px);
+}
